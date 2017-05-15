@@ -1,0 +1,45 @@
+serveur 1 :
+
+#define MSGSIZE 1478
+#define ACKSIZE 9 //"ACK000000"
+#define SEGSIZE 6 //"000000"
+#define ALPHA 0.6
+#define CWND_ESTIM 20
+#define NUM_SEG_ESTIM 100
+#define RTT_INIT 3000.0 //en microsecondes
+#define TIMEOUT 0.1 //coef : cwnd * TIMEOUT * SRTT = timeout
+#define WND_MAX 100
+#define CWND_INIT 100
+#define CWND_MAX 100
+
+
+
+
+serveur 2 :
+
+#define MSGSIZE 1478
+#define ACKSIZE 9 //"ACK000000"
+#define SEGSIZE 6 //"000000"
+#define ALPHA 0.6
+#define CWND_ESTIM 2
+#define NUM_SEG_ESTIM 10
+#define RTT_INIT 3000.0 //en microsecondes
+#define TIMEOUT 0.2 //coef : cwnd * TIMEOUT * SRTT = timeout
+#define WND_MAX 90
+#define CWND_INIT 90
+#define CWND_MAX 90
+
+
+serveur 3 :
+
+#define MSGSIZE 1478
+#define ACKSIZE 9 //"ACK000000"
+#define SEGSIZE 6 //"000000"
+#define ALPHA 0.6
+#define CWND_ESTIM 20
+#define NUM_SEG_ESTIM 100
+#define RTT_INIT 3000.0 //en microsecondes
+#define TIMEOUT 1 //coef : cwnd * TIMEOUT * SRTT = timeout
+#define WND_MAX 50
+#define CWND_INIT 50
+#define CWND_MAX 50
